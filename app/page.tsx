@@ -32,7 +32,7 @@ export default function Home() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
-    <div className="p-15">
+    <div className="p-10 md:p-15 lg:p-15 ">
       <div className="flex flex-col gap-60">
         <Intro toggleTheme={toggleTheme} />
         <AboutMe />

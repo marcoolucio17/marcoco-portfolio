@@ -33,11 +33,18 @@ export default function Intro({ toggleTheme }: { toggleTheme: () => void }) {
       </div>
       <div>
         <video
-          className="w-full h-[50vh] object-cover"
           src={theme == "dark" ? "redgradient2.webm" : "bluegradient1.webm"}
           autoPlay
           loop
           muted
+          playsInline
+          controls={false}
+          disablePictureInPicture
+          disableRemotePlayback
+          webkit-playsinline="true" // For older iOS versions
+          x5-playsinline="true" // For some Android browsers
+          className="w-full h-[50vh] object-cover pointer-events-none select-none"
+          onContextMenu={(e) => e.preventDefault()}
         />
       </div>
       <div className="flex flex-row justify-between">

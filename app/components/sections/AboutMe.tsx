@@ -26,9 +26,8 @@ export default function AboutMe() {
 
         <div className="flex flex-col gap-7 flex-1">
           <h2>
-            &ldquo;I&apos;m a software engineer who doesn&apos;t just code—I create experiences.&rdquo;
-            <br />
-            &ldquo;Here&apos;s what I do:&rdquo;
+            I&apos;m a software engineer who doesn&apos;t just code—I
+            create experiences.
           </h2>
           <p className="font-mono">
             I specialize on front-facing software, whether it&apos;s on a web or
