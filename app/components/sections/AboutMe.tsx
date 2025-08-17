@@ -1,13 +1,9 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { useTheme } from "next-themes";
 import { FlippingCard } from "../ui/FlippingCard";
 
 export default function AboutMe() {
-  const { theme } = useTheme();
-
   return (
     <div id="about-me-main-div" className="flex flex-col w-full h-full gap-20">
       <div>
@@ -30,11 +26,12 @@ export default function AboutMe() {
 
         <div className="flex flex-col gap-7 flex-1">
           <h2>
-            "I&apos;m a software engineer who doesn&apos;t just code—I create experiences."
-"Here&apos;s what I do:"
+            "I'm Marco, a software engineer who doesn't just code—I create experiences."
+            <br />
+            "Here's what I do:"
           </h2>
           <p className="font-mono">
-            I specialize on front-facing software, whether it&apos;s on a web or
+            I specialize on front-facing software, whether it's on a web or
             mobile application. Nevertheless, I describe myself more as a
             full-stack software engineer based on my projects & experience
             developing full-stack applications. Feel free to ask me more about
