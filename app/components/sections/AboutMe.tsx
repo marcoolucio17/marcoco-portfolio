@@ -26,12 +26,12 @@ export default function AboutMe() {
 
         <div className="flex flex-col gap-7 flex-1">
           <h2>
-            "I'm Marco, a software engineer who doesn't just code—I create experiences."
+            &ldquo;I&apos;m a software engineer who doesn&apos;t just code—I create experiences.&rdquo;
             <br />
-            "Here's what I do:"
+            &ldquo;Here&apos;s what I do:&rdquo;
           </h2>
           <p className="font-mono">
-            I specialize on front-facing software, whether it's on a web or
+            I specialize on front-facing software, whether it&apos;s on a web or
             mobile application. Nevertheless, I describe myself more as a
             full-stack software engineer based on my projects & experience
             developing full-stack applications. Feel free to ask me more about
