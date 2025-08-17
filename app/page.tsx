@@ -19,7 +19,13 @@ export default function Home() {
   }, []);
 
   if (!mounted) {
-    return null;
+    return (
+      <div className="p-15 min-h-screen bg-gray-50 dark:bg-gray-900">
+        <div className="flex items-center justify-center h-screen">
+          <div className="animate-pulse text-gray-400">Loading...</div>
+        </div>
+      </div>
+    );
   }
 
   const toggleTheme = (): void => {
@@ -27,7 +33,7 @@ export default function Home() {
   };
   return (
     <div className="p-15">
-      <div className = "flex flex-col gap-60">
+      <div className="flex flex-col gap-60">
         <Intro toggleTheme={toggleTheme} />
         <AboutMe />
         <WorkExperience />

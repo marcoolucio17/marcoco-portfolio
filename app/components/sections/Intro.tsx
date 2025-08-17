@@ -22,7 +22,7 @@ export default function Intro({ toggleTheme }: { toggleTheme: () => void }) {
   return (
     <div id="intro-section" className="flex flex-col mt-4 gap-15">
       <div className="flex flex-col items-center">
-        <div className="flex flex-row w-full justify-between">
+        <div className="flex flex-col-reverse md:flex-row w-full justify-between gap-10">
           <div className="flex flex-col">
             <h1 className="font-serif h1">Marco A. Lucio Sosa</h1>
             <h3 className="mt-2">Software Engineer</h3>
@@ -42,16 +42,12 @@ export default function Intro({ toggleTheme }: { toggleTheme: () => void }) {
       </div>
       <div className="flex flex-row justify-between">
         <div className="flex flex-row gap-8">
-          <ScrollButton targetId="about-me-main-div">
-            about me
-          </ScrollButton>
+          <ScrollButton targetId="about-me-main-div">about me</ScrollButton>
           <ScrollButton targetId="work-experience-section">
             experience
           </ScrollButton>
         </div>
-        <ScrollButton targetId="contact-section">
-            contact
-          </ScrollButton>
+        <ScrollButton targetId="contact-section">contact</ScrollButton>
       </div>
     </div>
   );
