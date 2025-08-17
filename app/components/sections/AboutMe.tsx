@@ -34,7 +34,7 @@ export default function AboutMe() {
 "Here&apos;s what I do:"
           </h2>
           <p className="font-mono">
-            I specialize on front-facing software, whether it's on a web or
+            I specialize on front-facing software, whether it&apos;s on a web or
             mobile application. Nevertheless, I describe myself more as a
             full-stack software engineer based on my projects & experience
             developing full-stack applications. Feel free to ask me more about
