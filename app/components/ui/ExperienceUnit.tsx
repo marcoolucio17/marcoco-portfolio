@@ -20,7 +20,7 @@ export function ExperienceUnit({
     >
       <button className="flex items-center justify-between">
         <div className="flex flex-col gap-2 items-start">
-          <h2 className="font-mono underline">{title}</h2>
+          <h2 className="font-mono underline text-start">{title}</h2>
           <h3 className="font-mono text-sm">{period}</h3>
         </div>
         

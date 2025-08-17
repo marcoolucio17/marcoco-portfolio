@@ -25,8 +25,8 @@ export default function AboutMe() {
           />
         </div>
 
-        <div className="flex flex-col gap-7 flex-1">
-          <h2 className="h-1/3">
+        <div className="flex flex-col gap-12 md:gap-7 flex-1">
+          <h2 className="h-2/3 md:h-1/3 lg:h-1/3">
             I&apos;m a software engineer who doesn&apos;t just code—
             <Typewriter
               words={[

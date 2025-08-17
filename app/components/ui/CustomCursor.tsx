@@ -39,7 +39,7 @@ export default function CustomCursor() {
 
   return (
     <div
-      className={`custom-cursor ${cursorState}`}
+      className={`custom-cursor className="hidden hover:hover:block pointer-fine:block ${cursorState}`}
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
