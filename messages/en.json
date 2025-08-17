@@ -1,0 +1,77 @@
+{
+  "common": {
+    "name": "Marco A. Lucio Sosa",
+    "role": "Software Engineer",
+    "email": "marcoalucio15@gmail.com"
+  },
+  "landing": {
+    "about me": "about me",
+    "experience": "experience",
+    "contact": "contact"
+  },
+  "intro": {
+    "greeting": "I'm a software engineer who doesn't just code—",
+    "typewriterWords": [
+      "I create experiences.",
+      "I build digital worlds.",
+      "I solve real problems.", 
+      "I craft user journeys.",
+      "I turn coffee into code.",
+      "I design the future.",
+      "I ship beautiful products."
+    ]
+  },
+  "about": {
+    "title": "whoami?",
+    "quote": "I'm a software engineer who doesn't just code—I create experiences.",
+    "subtitle": "Here's what I do:",
+    "description": "I specialize on front-facing software, whether it's on a web or mobile application. Nevertheless, I describe myself more as a full-stack software engineer based on my projects & experience developing full-stack applications. Feel free to ask me more about this.",
+    "flipcard": {
+      "alt": "marcoco y señor sol!! :3",
+      "backText": "This is one of my favorite spots on Tlaquepaque, Jalisco, México. The artist is Rodo Padilla, and you should definitely check him out!!"
+    }
+  },
+  "experience": {
+    "title": "my experience",
+    "jobs": {
+      "oracle": {
+        "title": "SOFTWARE ENGINEER INTERN @ ORACLE",
+        "period": "Jul 2024 - Present",
+        "description": "Constructed several web pages while also developing the iOS OBaaS SDK."
+      },
+      "tec": {
+        "title": "CYBER THREAD-HUNTING INTERN @ TEC DE MTY", 
+        "period": "Feb 2025 - Present",
+        "description": "Worked as a cyber thread-hunting analyst where I recognized and published a critical pattern of attacks."
+      },
+      "bitam": {
+        "title": "SOFTWARE ENGINEER INTERN @ BITAM",
+        "period": "Oct 2023 - Jun 2024", 
+        "description": "Worked as a front-end engineer."
+      },
+      "medicflow": {
+        "title": "COFOUNDER & SOFTWARE ENGINEER @ MEDICFLOW",
+        "period": "Jun 2023 - Oct 2023",
+        "description": "Worked as a front-end engineer."
+      }
+    }
+  },
+  "contact": {
+    "title": "contact",
+    "flipcard": {
+      "alt": "marcocoloco",
+      "backText": "This drawing was made by my girlfriend!!! PEAK."
+    },
+    "links": {
+      "email": "Email",
+      "github": "GitHub Profile",
+      "linkedin": "LinkedIn Profile", 
+      "portfolio": "Portfolio Website"
+    }
+  },
+  "navigation": {
+    "scrollToContact": "Contact Me",
+    "toggleTheme": "Toggle Theme",
+    "changeLanguage": "Cambiar a Español"
+  }
+}

@@ -2,13 +2,17 @@ import React from "react";
 
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 import { SquareThemeToggle } from "../ui/SquareThemeToggle";
+import { LanguageToggle } from "../ui/LanguageToggle";
 import { ScrollButton } from "../ui/ScrollButton";
 
 export default function Intro({ toggleTheme }: { toggleTheme: () => void }) {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState<boolean>(false);
+  const t = useTranslations("landing");
+  const t2 = useTranslations("common");
 
   // Prevent hydration mismatch
   useEffect(() => {
@@ -25,10 +29,13 @@ export default function Intro({ toggleTheme }: { toggleTheme: () => void }) {
         <div className="flex flex-col-reverse md:flex-row w-full justify-between gap-10">
           <div className="flex flex-col">
             <h1 className="font-serif h1">Marco A. Lucio Sosa</h1>
-            <h3 className="mt-2">Software Engineer</h3>
+            <h3 className="mt-2">{t2("role")}</h3>
           </div>
 
+          <div className="flex flex-col">
+          <LanguageToggle />
           <SquareThemeToggle />
+          </div>
         </div>
       </div>
       <div>
@@ -49,12 +56,12 @@ export default function Intro({ toggleTheme }: { toggleTheme: () => void }) {
       </div>
       <div className="flex flex-row justify-between">
         <div className="flex flex-row gap-8">
-          <ScrollButton targetId="about-me-main-div">about me</ScrollButton>
+          <ScrollButton targetId="about-me-main-div">{t("about me")}</ScrollButton>
           <ScrollButton targetId="work-experience-section">
-            experience
+            {t("experience")}
           </ScrollButton>
         </div>
-        <ScrollButton targetId="contact-section">contact</ScrollButton>
+        <ScrollButton targetId="contact-section">{t("contact")}</ScrollButton>
       </div>
     </div>
   );

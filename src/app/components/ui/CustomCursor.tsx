@@ -1,4 +1,3 @@
-// components/CustomCursor.js
 "use client";
 
 import { useState, useEffect } from "react";

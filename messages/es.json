@@ -1,0 +1,77 @@
+{
+  "common": {
+    "name": "Marco A. Lucio Sosa",
+    "role": "Ingeniero de Software",
+    "email": "marcoalucio15@gmail.com"
+  },
+  "landing": {
+    "about me": "sobre mí",
+    "experience": "experiencia",
+    "contact": "contacto"
+  },
+  "intro": {
+    "greeting": "Soy un ingeniero de software que no solo programa—",
+    "typewriterWords": [
+      "Creo experiencias.",
+      "Construyo mundos digitales.",
+      "Resuelvo problemas reales.",
+      "Diseño experiencias de usuario.",
+      "Convierto café en código.",
+      "Diseño el futuro.",
+      "Lanzo productos hermosos."
+    ]
+  },
+  "about": {
+    "title": "¿quién soy?",
+    "quote": "Soy un ingeniero de software que no solo programa—creo experiencias.",
+    "subtitle": "Esto es lo que hago:",
+    "description": "Me especializo en software orientado al usuario, ya sea en aplicaciones web o móviles. Sin embargo, me describo más como un ingeniero de software full-stack basado en mis proyectos y experiencia desarrollando aplicaciones completas. No dudes en preguntarme más sobre esto.",
+    "flipcard": {
+      "alt": "marcoco y señor sol!! :3", 
+      "backText": "¡Este es uno de mis lugares favoritos en Tlaquepaque, Jalisco, México. El artista es Rodo Padilla, y definitivamente deberías conocerlo!!"
+    }
+  },
+  "experience": {
+    "title": "mi experiencia",
+    "jobs": {
+      "oracle": {
+        "title": "INGENIERO DE SOFTWARE INTERNO @ ORACLE",
+        "period": "Jul 2024 - Presente",
+        "description": "Construí varias páginas web mientras también desarrollaba el SDK de iOS OBaaS."
+      },
+      "tec": {
+        "title": "INTERNO DE CAZA DE AMENAZAS CIBERNÉTICAS @ TEC DE MTY",
+        "period": "Feb 2025 - Presente", 
+        "description": "Trabajé como analista de caza de amenazas cibernéticas donde reconocí y publiqué un patrón crítico de ataques."
+      },
+      "bitam": {
+        "title": "INGENIERO DE SOFTWARE INTERNO @ BITAM",
+        "period": "Oct 2023 - Jun 2024",
+        "description": "Trabajé como ingeniero front-end."
+      },
+      "medicflow": {
+        "title": "COFUNDADOR E INGENIERO DE SOFTWARE @ MEDICFLOW", 
+        "period": "Jun 2023 - Oct 2023",
+        "description": "Trabajé como ingeniero front-end."
+      }
+    }
+  },
+  "contact": {
+    "title": "contacto",
+    "flipcard": {
+      "alt": "marcocoloco",
+      "backText": "¡Este dibujo lo hizo mi novia!!! INCREÍBLE."
+    },
+    "links": {
+      "email": "Correo",
+      "github": "Perfil de GitHub",
+      "linkedin": "Perfil de LinkedIn",
+      "portfolio": "Sitio Web del Portafolio"
+    }
+  },
+  "navigation": {
+    "scrollToContact": "Contáctame", 
+    "toggleTheme": "Cambiar Tema",
+    "changeLanguage": "Switch to English"
+  }
+}
