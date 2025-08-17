@@ -8,8 +8,8 @@ import { SquareThemeToggle } from "../ui/SquareThemeToggle";
 import { LanguageToggle } from "../ui/LanguageToggle";
 import { ScrollButton } from "../ui/ScrollButton";
 
-export default function Intro({ toggleTheme }: { toggleTheme: () => void }) {
-  const { theme, setTheme } = useTheme();
+export default function Intro() {
+  const { theme } = useTheme();
   const [mounted, setMounted] = useState<boolean>(false);
   const t = useTranslations("landing");
   const t2 = useTranslations("common");

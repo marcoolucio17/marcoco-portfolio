@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Github, Linkedin, Music, Play, Radio, Headphones, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, Headphones, ExternalLink } from "lucide-react";
 
 type IconType = "email" | "github" | "linkedin" | "spotify" | "portfolio" | "phone" | "twitter";
 
@@ -9,14 +9,15 @@ interface ContactLinkProps {
   url?: string;
 }
 
+// maps the icon type to the actual icon svg
 const iconMap = {
   email: Mail,
   github: Github,
   linkedin: Linkedin,
-  spotify: Music, // or Play, Radio, Headphones
+  spotify: Headphones, 
   portfolio: ExternalLink,
-  phone: Mail, // You can import Phone icon
-  twitter: Mail, // You can import Twitter icon if available
+  phone: Mail, 
+  twitter: Mail, 
 };
 
 export const ContactLink: React.FC<ContactLinkProps> = ({
@@ -26,6 +27,7 @@ export const ContactLink: React.FC<ContactLinkProps> = ({
 }) => {
   const IconComponent = iconMap[type];
   
+  // opens either another web page or the mail app
   const handleClick = () => {
     if (url) {
       window.open(url, '_blank', 'noopener,noreferrer');

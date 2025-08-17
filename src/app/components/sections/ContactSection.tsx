@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { useState } from "react";
 import { FlippingCard } from "../ui/FlippingCard";
 import { ContactLink } from "../ui/ContactLink";
 

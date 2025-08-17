@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { Ubuntu_Mono, Crimson_Text } from "next/font/google";
 import CustomCursor from "./components/ui/CustomCursor";
 
@@ -8,16 +7,6 @@ import { getLocale } from "next-intl/server";
 
 import "./globals.css";
 import { Providers } from "@/src/app/components/theme-providers";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 // Configure Ubuntu Mono for code/monospace text
 const ubuntuMono = Ubuntu_Mono({

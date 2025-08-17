@@ -1,11 +1,7 @@
-import { title } from "process";
 import React from "react";
 import { ExperienceUnit } from "../ui/ExperienceUnit";
-import { useTheme } from "next-themes";
 
 export default function WorkExperience() {
-  const { theme } = useTheme();
-
   return (
     <div id="work-experience-section" className="w-full">
       <div className="flex flex-row w-full justify-between">
