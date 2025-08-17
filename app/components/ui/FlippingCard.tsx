@@ -36,7 +36,7 @@ export const FlippingCard: React.FC<FlippingCardProps> = ({
             isFlipped ? 'rotate-y-180' : ''
           }`}
         >
-          <div className="absolute inset-0 w-full h-full backface-hidden">
+          <button className="absolute inset-0 w-full h-full backface-hidden">
             <Image
               src={imageSrc}
               alt={imageAlt}
@@ -44,7 +44,7 @@ export const FlippingCard: React.FC<FlippingCardProps> = ({
               height={height}
               className={`${borderRadius} transition ease-in w-full h-full object-cover`}
             />
-          </div>
+          </button>
           
           <div className={`absolute inset-0 w-full h-full backface-hidden rotate-y-180 ${backgroundColor} ${borderRadius} flex items-center justify-center p-6`}>
             <div className={`text-center ${textColor}`}>

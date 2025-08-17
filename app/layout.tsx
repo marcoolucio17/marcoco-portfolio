@@ -1,8 +1,8 @@
-
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Ubuntu_Mono, Crimson_Text } from 'next/font/google'
-import { ThemeProvider } from 'next-themes'
+import { Ubuntu_Mono, Crimson_Text } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+import CustomCursor from "./components/ui/CustomCursor";
 
 import "./globals.css";
 import { Providers } from "@/app/components/theme-providers";
@@ -19,20 +19,20 @@ const geistMono = Geist_Mono({
 
 // Configure Ubuntu Mono for code/monospace text
 const ubuntuMono = Ubuntu_Mono({
-  weight: ['400', '700'], // Regular and Bold
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-ubuntu-mono',
-})
+  weight: ["400", "700"], // Regular and Bold
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-ubuntu-mono",
+});
 
 // Configure Crimson Text for headings and body
 const crimsonText = Crimson_Text({
-  weight: ['400', '600', '700'], // Regular, Semi-bold, Bold
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-crimson-text',
-})
+  weight: ["400", "600", "700"], // Regular, Semi-bold, Bold
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-crimson-text",
+});
 
 export const metadata: Metadata = {
   title: "marcoco's web portfolio",
@@ -45,12 +45,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html 
-      lang="en" 
+    <html
+      lang="en"
       className={`${crimsonText.variable} ${ubuntuMono.variable}`}
       suppressHydrationWarning
     >
+      
       <body className={crimsonText.className}>
+        <CustomCursor />
         <Providers>{children}</Providers>
       </body>
     </html>

@@ -18,8 +18,8 @@ export function ExperienceUnit({
       className="flex flex-col gap-4 cursor-pointer rounded-lg transition-color w-full"
       onClick={() => setIsExpanded(!isExpanded)}
     >
-      <div className="flex items-center justify-between">
-        <div className="flex flex-col gap-2">
+      <button className="flex items-center justify-between">
+        <div className="flex flex-col gap-2 items-start">
           <h2 className="font-mono underline">{title}</h2>
           <h3 className="font-mono text-sm">{period}</h3>
         </div>
@@ -32,7 +32,7 @@ export function ExperienceUnit({
             </svg>
           </div>
         )}
-      </div>
+      </button>
 
       {description && (
         <div className={`

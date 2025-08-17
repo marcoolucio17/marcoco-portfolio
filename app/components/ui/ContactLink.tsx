@@ -35,7 +35,7 @@ export const ContactLink: React.FC<ContactLinkProps> = ({
   };
 
   return (
-    <div className="group cursor-pointer" onClick={handleClick}>
+    <button className="group cursor-pointer" onClick={handleClick}>
       <h3 className="font-mono flex items-center gap-3 border border-gray-200 dark:border-gray-700 p-5 rounded-xl bg-gradient-to-r from-blue-50 to-red-50 dark:from-blue-900/20 dark:to-red-900/20 transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1 group-hover:border-blue-400 dark:group-hover:border-blue-500 group-hover:bg-gradient-to-r group-hover:from-blue-100 group-hover:to-red-100 dark:group-hover:from-blue-800/30 dark:group-hover:to-red-800/30">
         <IconComponent
           size={20}
@@ -45,6 +45,6 @@ export const ContactLink: React.FC<ContactLinkProps> = ({
           {address}
         </span>
       </h3>
-    </div>
+    </button>
   );
 };
