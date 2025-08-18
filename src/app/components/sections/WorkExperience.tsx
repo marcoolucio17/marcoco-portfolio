@@ -1,33 +1,37 @@
 import React from "react";
 import { ExperienceUnit } from "../ui/ExperienceUnit";
+import { useTranslations } from "next-intl";
+
 
 export default function WorkExperience() {
+  const t = useTranslations("experience");
+
   return (
     <div id="work-experience-section" className="w-full">
       <div className="flex flex-row w-full justify-between">
         <div className="flex flex-col w-full">
-          <h1 className="mb-12">my experience</h1>
+          <h1 className="mb-12">{t("title")}</h1>
 
           <div id="exp-type-shit" className="flex flex-col gap-10">
             <ExperienceUnit
-              title="SOFTWARE ENGINEER INTERN @ ORACLE"
-              period="Jul 2024 - Present"
-              description="Constructed several web pages while also developing the iOS OBaaS SDK."
+              title={t("jobs.oracle.title")}
+              period={t("jobs.oracle.period")}
+              description={t("jobs.oracle.description")}
             />
             <ExperienceUnit
-              title="CYBER THREAD-HUNTING INTERN @ TEC DE MTY"
-              period="Feb 2025 - Present"
-              description="Worked as a cyber thread-hunting analyst where I recognized and published a critical pattern of attacks."
+              title={t("jobs.tec.title")}
+              period={t("jobs.tec.period")}
+              description={t("jobs.tec.description")}
             />
             <ExperienceUnit
-              title="SOFTWARE ENGINEER INTERN @ BITAM"
-              period="Oct 2023 - Jun 2024"
-              description="Worked as a front-end engineer."
+              title={t("jobs.bitam.title")}
+              period={t("jobs.bitam.period")}
+              description={t("jobs.bitam.description")}
             />
             <ExperienceUnit
-              title="COFOUNDER & SOFTWARE ENGINEER @ MEDICFLOW"
-              period="Jun 2023 - Oct 2023"
-              description="Worked as a front-end engineer."
+              title={t("jobs.medicflow.title")}
+              period={t("jobs.medicflow.period")}
+              description={t("jobs.medicflow.description")}
             />
           </div>
         </div>

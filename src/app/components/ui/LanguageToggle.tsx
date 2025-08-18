@@ -2,9 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { setUserLocale } from "@/src/services/locale";
+import { useLocale } from "next-intl";
 
 export function LanguageToggle() {
   const [mounted, setMounted] = useState(false);
+  const locale = useLocale();
+  console.log(locale);
 
   useEffect(() => {
     setMounted(true);
@@ -32,14 +35,14 @@ export function LanguageToggle() {
   }
 
   return (
-    <div className="flex flex-row gap-4 justify-end mb-3">
+    <div className="flex flex-row gap-4 justify-start md:justify-end lg:justify-end mb-4">
       <div className="flex flex-row items-center gap-2">
-        <button className="font-mono" onClick={handleEnClick}>
+        <button className={`font-mono ${locale === "en" ? "underline": ""}`} onClick={handleEnClick}>
           <p>EN</p>
         </button>
       </div>
       <div className="flex flex-row items-center gap-2">
-        <button className="font-mono" onClick={handleEsClick}>
+        <button className={`font-mono ${locale === "es" ? "underline": ""}`} onClick={handleEsClick}>
           <p>ES</p>
         </button>
       </div>

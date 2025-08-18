@@ -2,10 +2,12 @@
 
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import { useTranslations } from 'next-intl'
 
 export function SquareThemeToggle() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const t = useTranslations("navigation")
 
   useEffect(() => {
     setMounted(true)
@@ -15,11 +17,11 @@ export function SquareThemeToggle() {
     return (
       <div className="flex flex-row gap-15">
         <div className="flex flex-row items-center gap-2">
-          <p className="font-mono text-sm">LIGHT</p>
+          <p className="font-mono text-sm">{t("lightTheme")}</p>
           <div className="w-5 h-5 border-2 border-black bg-gray-200 animate-pulse" />
         </div>
         <div className="flex flex-row items-center gap-2">
-          <p className="font-mono text-sm">DARK</p>
+          <p className="font-mono text-sm">{t("darkTheme")}</p>
           <div className="w-5 h-5 border-2 border-black bg-gray-200 animate-pulse" />
         </div>
       </div>
@@ -30,7 +32,7 @@ export function SquareThemeToggle() {
     <div className="flex flex-row gap-15">
       {/* Light Theme Checkbox */}
       <div className="flex flex-row items-center gap-2">
-        <p className="font-mono text-sm">LIGHT</p>
+        <p className="font-mono text-sm">{t("lightTheme")}</p>
         <label className="cursor-pointer">
           <input
             type="checkbox"
@@ -60,7 +62,7 @@ export function SquareThemeToggle() {
 
       {/* Dark Theme Checkbox */}
       <div className="flex flex-row items-center gap-2">
-        <p className="font-mono text-sm">DARK</p>
+        <p className="font-mono text-sm">{t("darkTheme")}</p>
         <label className="cursor-pointer">
           <input
             type="checkbox"

@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "Marco A. Lucio Sosa",
-    "role": "Ingeniero de Software",
+    "role": "Ingeniero en Tecnologías Computacionales",
     "email": "marcoalucio15@gmail.com"
   },
   "landing": {
@@ -12,40 +12,40 @@
   "intro": {
     "greeting": "Soy un ingeniero de software que no solo programa—",
     "typewriterWords": [
-      "Creo experiencias.",
-      "Construyo mundos digitales.",
-      "Resuelvo problemas reales.",
-      "Diseño experiencias de usuario.",
-      "Convierto café en código.",
-      "Diseño el futuro.",
-      "Lanzo productos hermosos."
+      "creo experiencias padres 👍.",
+      "diseño... de repente",
+      "resuelvo problemas reales.",
+      "yap yap yap.",
+      "convierto café en código.",
+      "diseño... de repente",
+      "lanzo productos PEAK."
     ]
   },
   "about": {
     "title": "¿quién soy?",
     "quote": "Soy un ingeniero de software que no solo programa—creo experiencias.",
     "subtitle": "Esto es lo que hago:",
-    "description": "Me especializo en software orientado al usuario, ya sea en aplicaciones web o móviles. Sin embargo, me describo más como un ingeniero de software full-stack basado en mis proyectos y experiencia desarrollando aplicaciones completas. No dudes en preguntarme más sobre esto.",
+    "description": "Me especializo en software en el cual los usuarios interactuen en primer plano, ya sea en aplicaciones web o móviles. Sin embargo, me describo más como un ingeniero full-stack basado en mis proyectos & experiencia desarrollando aplicaciones full-stack. ¡Si tienes dudas no dudes en decirme!",
     "flipcard": {
       "alt": "marcoco y señor sol!! :3", 
-      "backText": "¡Este es uno de mis lugares favoritos en Tlaquepaque, Jalisco, México. El artista es Rodo Padilla, y definitivamente deberías conocerlo!!"
+      "backText": "¡Les presento al señor sol! (nombre no oficial). Esta es la galería de Rodo Padilla, una de mis favoritas."
     }
   },
   "experience": {
-    "title": "mi experiencia",
+    "title": "experiencia",
     "jobs": {
       "oracle": {
-        "title": "INGENIERO DE SOFTWARE INTERNO @ ORACLE",
+        "title": "PRÁCTICANTE INGENIERO DE SOFTWARE @ ORACLE",
         "period": "Jul 2024 - Presente",
         "description": "Construí varias páginas web mientras también desarrollaba el SDK de iOS OBaaS."
       },
       "tec": {
-        "title": "INTERNO DE CAZA DE AMENAZAS CIBERNÉTICAS @ TEC DE MTY",
+        "title": "PRÁCTICANTE DE CYBER THREAD-HUNTING @ TEC DE MTY",
         "period": "Feb 2025 - Presente", 
         "description": "Trabajé como analista de caza de amenazas cibernéticas donde reconocí y publiqué un patrón crítico de ataques."
       },
       "bitam": {
-        "title": "INGENIERO DE SOFTWARE INTERNO @ BITAM",
+        "title": "PRÁCTICANTE INGENIERO DE SOFTWARE @ BITAM",
         "period": "Oct 2023 - Jun 2024",
         "description": "Trabajé como ingeniero front-end."
       },
@@ -60,7 +60,7 @@
     "title": "contacto",
     "flipcard": {
       "alt": "marcocoloco",
-      "backText": "¡Este dibujo lo hizo mi novia!!! INCREÍBLE."
+      "backText": "¡¡¡Este dibujo lo hizo mi novia!!! PEAK."
     },
     "links": {
       "email": "Correo",
@@ -72,6 +72,8 @@
   "navigation": {
     "scrollToContact": "Contáctame", 
     "toggleTheme": "Cambiar Tema",
-    "changeLanguage": "Switch to English"
+    "changeLanguage": "Switch to English",
+    "darkTheme": "OSCURO",
+    "lightTheme": "CLARO"
   }
 }

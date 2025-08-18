@@ -1,16 +1,19 @@
 import { FlippingCard } from "../ui/FlippingCard";
 import { ContactLink } from "../ui/ContactLink";
+import { useTranslations } from "next-intl";
 
 export const ContactSection: React.FC = () => {
+  const t = useTranslations("contact");
+
   return (
     <section id="contact-section" className="w-full">
-      <h1 className="font-serif mb-12 relative">contact</h1>
+      <h1 className="font-serif mb-12 relative">{t("title")}</h1>
 
       <div className="flex flex-col lg:flex-row items-center gap-12 ">
         <FlippingCard
           imageSrc="/marcocoicon.jpg"
           imageAlt="marcocoloco"
-          backText="This drawing was made by my girlfriend!!! PEAK."
+          backText={t("flipcard.backText")}
           width={200}
           height={200}
           backgroundColor="bg-black"

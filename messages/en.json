@@ -72,6 +72,8 @@
   "navigation": {
     "scrollToContact": "Contact Me",
     "toggleTheme": "Toggle Theme",
-    "changeLanguage": "Cambiar a Español"
+    "changeLanguage": "Cambiar a Español",
+    "darkTheme": "DARK",
+    "lightTheme": "LIGHT"
   }
 }
