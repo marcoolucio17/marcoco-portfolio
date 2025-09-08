@@ -45,7 +45,7 @@ export default async function RootLayout({
     >
       <body className={crimsonText.className}>
         <NextIntlClientProvider>
-          <CustomCursor />
+          {/* <CustomCursor /> */}
           <Providers>{children}</Providers>
         </NextIntlClientProvider>
       </body>

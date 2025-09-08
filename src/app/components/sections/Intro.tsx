@@ -1,5 +1,4 @@
 import React from "react";
-
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
@@ -7,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { SquareThemeToggle } from "../ui/SquareThemeToggle";
 import { LanguageToggle } from "../ui/LanguageToggle";
 import { ScrollButton } from "../ui/ScrollButton";
+import "../../styles/Intro.css";
 
 export default function Intro() {
   const { theme } = useTheme();
@@ -33,30 +33,42 @@ export default function Intro() {
           </div>
 
           <div className="flex flex-col">
-          <LanguageToggle />
-          <SquareThemeToggle />
+            <LanguageToggle />
+            <SquareThemeToggle />
           </div>
         </div>
       </div>
-      <div>
-        <video
-          src={theme == "dark" ? "redgradient2.webm" : "bluegradient1.webm"}
-          autoPlay
-          loop
-          muted
-          playsInline
-          controls={false}
-          disablePictureInPicture
-          disableRemotePlayback
-          webkit-playsinline="true" // For older iOS versions
-          x5-playsinline="true" // For some Android browsers
-          className="w-full h-[50vh] object-cover pointer-events-none select-none"
-          onContextMenu={(e) => e.preventDefault()}
+
+      {/* Gradient background container with blobs */}
+      <div className="w-full h-[50vh] overflow-hidden relative">
+        {/* Main gradient background */}
+        <div
+          className={`w-full h-full ${
+            theme === "dark" ? "animate-gradient-red" : "animate-gradient-blue"
+          }`}
         />
+        
+        {/* Theme-aware blobs */}
+        {theme === "dark" ? (
+          <>
+            <div className="blob blob-primary-red"></div>
+            <div className="blob blob-secondary-red"></div>
+            <div className="blob blob-tertiary-red"></div>
+          </>
+        ) : (
+          <>
+            <div className="blob blob-primary-blue"></div>
+            <div className="blob blob-secondary-blue"></div>
+            <div className="blob blob-tertiary-blue"></div>
+          </>
+        )}
       </div>
+
       <div className="flex flex-row justify-between">
         <div className="flex flex-row gap-8">
-          <ScrollButton targetId="about-me-main-div">{t("about me")}</ScrollButton>
+          <ScrollButton targetId="about-me-main-div">
+            {t("about me")}
+          </ScrollButton>
           <ScrollButton targetId="work-experience-section">
             {t("experience")}
           </ScrollButton>
