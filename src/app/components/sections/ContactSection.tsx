@@ -31,7 +31,7 @@ export const ContactSection: React.FC = () => {
             <ContactLink
               type="linkedin"
               address="Marco Lucio"
-              url="https://linkedin.com/in/marco"
+              url="https://www.linkedin.com/in/marco-lucio-3a24b0214/"
             />
 
             <ContactLink

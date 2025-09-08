@@ -1,7 +1,7 @@
 import React from "react";
-import { Mail, Github, Linkedin, Headphones, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, Headphones, ExternalLink, GamepadIcon } from "lucide-react";
 
-type IconType = "email" | "github" | "linkedin" | "spotify" | "portfolio" | "phone" | "twitter";
+type IconType = "email" | "github" | "linkedin" | "spotify" | "portfolio" | "phone" | "twitter" | "steam";
 
 interface ContactLinkProps {
   type: IconType;
@@ -18,6 +18,7 @@ const iconMap = {
   portfolio: ExternalLink,
   phone: Mail, 
   twitter: Mail, 
+  steam: GamepadIcon
 };
 
 export const ContactLink: React.FC<ContactLinkProps> = ({

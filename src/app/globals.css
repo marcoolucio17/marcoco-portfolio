@@ -13,7 +13,8 @@
   --border: #e2e8f0;
   
   --font-serif: var(--font-crimson-text);
-  --font-mono: var(--font-ubuntu-mono);
+  --font-mono: var(--font-dm-mono);
+  --font-sans: var(--font-dm-sans);
 }
 
 .dark {
@@ -116,12 +117,39 @@ body {
 }
 
 /* Hide default cursor everywhere */
-*, *::before, *::after {
+/* *, *::before, *::after {
   cursor: none !important;
 }
 
 body, * {
   cursor: none;
+} */
+
+.custom-cursor.clicked {
+  animation: clickShrink 0.15s ease-out;
+}
+
+.custom-cursor.clicked::before {
+  animation: ripple 0.5s ease-out;
+}
+
+@keyframes clickShrink {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(0.7); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+    border-width: 3px;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+    border-width: 0;
+  }
 }
 
 /* Font utility classes */
@@ -131,6 +159,10 @@ body, * {
 
 .font-mono {
   font-family: var(--font-mono), monospace;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
 }
 
 /* Responsive Typography */
@@ -153,7 +185,7 @@ html {
 /* Typography styles optimized for Crimson Text */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif), serif;
-  line-height: 1.2;
+  line-height: 2;
 }
 
 h1 {
@@ -177,7 +209,7 @@ p {
 }
 
 code, pre {
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-sans), monospace;
   background-color: var(--secondary);
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
