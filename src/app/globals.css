@@ -13,7 +13,8 @@
   --border: #e2e8f0;
   
   --font-serif: var(--font-crimson-text);
-  --font-mono: var(--font-ubuntu-mono);
+  --font-mono: var(--font-dm-mono);
+  --font-sans: var(--font-dm-sans);
 }
 
 .dark {
@@ -160,6 +161,10 @@ body, * {
   font-family: var(--font-mono), monospace;
 }
 
+.font-sans {
+  font-family: var(--font-sans);
+}
+
 /* Responsive Typography */
 html {
   font-size: 16px;
@@ -180,7 +185,7 @@ html {
 /* Typography styles optimized for Crimson Text */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif), serif;
-  line-height: 1.2;
+  line-height: 2;
 }
 
 h1 {
@@ -204,7 +209,7 @@ p {
 }
 
 code, pre {
-  font-family: var(--font-mono), monospace;
+  font-family: var(--font-sans), monospace;
   background-color: var(--secondary);
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
