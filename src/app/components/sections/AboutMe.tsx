@@ -29,7 +29,7 @@ export default function AboutMe() {
           {/* Header at top */}
           <div className="font-sans text-xl lg:text-2xl">
             <h2 className="font-sans leading-relaxed">
-              I'm Marco Lucio, {" "}
+              I am Marco Lucio, {" "}
               <span className="text-gray-500 ml-1">
                 a Software Engineer Intern at Oracle.
               </span>
