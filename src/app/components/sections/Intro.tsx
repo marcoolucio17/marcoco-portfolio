@@ -73,7 +73,10 @@ export default function Intro() {
             {t("experience")}
           </ScrollButton>
         </div>
-        <ScrollButton targetId="contact-section">{t("contact")}</ScrollButton>
+        <ScrollButton targetId="projects-section">
+            {/* {t("projects")} */}
+            projects
+          </ScrollButton>
       </div>
     </div>
   );

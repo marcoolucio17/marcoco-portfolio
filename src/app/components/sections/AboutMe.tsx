@@ -30,7 +30,7 @@ export default function AboutMe() {
           <div className="font-sans text-xl lg:text-2xl">
             <h2 className="font-sans leading-relaxed">
               I'm Marco Lucio, {" "}
-              <span className="text-gray-400 ml-1">
+              <span className="text-gray-500 ml-1">
                 a Software Engineer Intern at Oracle.
               </span>
             </h2>

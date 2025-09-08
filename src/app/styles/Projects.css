@@ -1,0 +1,169 @@
+.projects-container {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.projects-header {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: inherit;
+  margin: 0;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  min-height: 400px;
+}
+
+.project-item.right-image {
+  flex-direction: row;
+}
+
+.project-item.left-image {
+  flex-direction: row-reverse;
+}
+
+.project-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.project-content.right-aligned {
+  text-align: right;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.description-highlighted {
+  color: #6b7280; 
+}
+
+.project-tech {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.project-image {
+  flex: 1;
+  min-height: 300px;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+.project-pink {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+.project-coral {
+  background: linear-gradient(135deg, #f87171, #fb7185);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-title {
+    font-size: 2.5rem;
+  }
+  
+  .project-name {
+    font-size: 2rem;
+  }
+  
+  .project-item {
+    gap: 1.5rem;
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    gap: 2rem;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+  }
+  
+  .project-item,
+  .project-item.right-image,
+  .project-item.left-image {
+    flex-direction: column;
+    min-height: auto;
+    gap: 1.5rem;
+  }
+  
+  .project-content,
+  .project-content.right-aligned {
+    text-align: left;
+  }
+  
+  .project-name {
+    font-size: 1.75rem;
+  }
+  
+  .project-image {
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  .projects-grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-title {
+    font-size: 1.75rem;
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+  }
+  
+  .project-tech {
+    font-size: 0.85rem;
+  }
+}

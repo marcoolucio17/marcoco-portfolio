@@ -4,6 +4,7 @@ import Intro from "./components/sections/Intro";
 import AboutMe from "./components/sections/AboutMe";
 import WorkExperience from "./components/sections/WorkExperience";
 import { ContactSection } from "./components/sections/ContactSection";
+import Projects from "./components/sections/Projects";
 
 import { useState, useEffect } from "react";
 
@@ -31,7 +32,7 @@ export default function Home() {
         <Intro />
         <AboutMe />
         <WorkExperience />
-        <ContactSection />
+        <Projects />
       </div>
     </div>
   );
